@@ -23,7 +23,6 @@ public class ProfilePage extends AppCompatActivity {
     private FirebaseUser user;
     private DatabaseReference reference;
     private String userID;
-
     private Button logout;
 
 

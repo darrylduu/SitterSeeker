@@ -53,10 +53,10 @@ public class ForgotPassword extends AppCompatActivity {
             return;
         }
 
-        if(Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            emailEditText.setError(("Please provide valid email!"));
-            emailEditText.requestFocus();
-        }
+//        if(Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+//            emailEditText.setError(("Please provide valid email!"));
+//            emailEditText.requestFocus();
+//        }
 
         progressBar.setVisibility(View.VISIBLE);
         auth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
